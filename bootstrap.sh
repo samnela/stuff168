@@ -10,5 +10,5 @@ sudo apt-get install -y -f --force-yes apache2-mpm-prefork
 sudo apt-get install -y -f --force-yes php5
 sudo service apache2 restart
 curl --silent --location https://deb.nodesource.com/setup_0.12 | bash -
-sudo apt-get install --yes nodejs
+sudo apt-get install --yes nodejs npm
 
