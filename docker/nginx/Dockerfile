@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-MAINTAINER Vincent Composieux <vincent.composieux@gmail.com>
+MAINTAINER Samuel NELA <hello@samnela.com>
 
 #RUN apk add --update nginx
 #RUN rm -rf /var/cache/apk/* && rm -rf /tmp/*
