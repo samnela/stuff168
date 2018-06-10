@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 services:
     db:
         image: mysql
@@ -17,6 +17,7 @@ services:
             - .:/var/www/
         links:
           - db:mysqldb
+          - rabbit:rabbit
 
     nginx:
         build: ./nginx
@@ -24,8 +25,7 @@ services:
             - "80:80"
         links:
             - php
-        volumes_from:
-            - php
+            - rabbit
         volumes:
             - ./logs/nginx/:/var/log/nginx
     elk:
@@ -35,6 +35,17 @@ services:
         volumes:
             - ./elk/logstash:/etc/logstash
             - ./elk/logstash/patterns:/opt/logstash/patterns
-        volumes_from:
+        depends_on:
             - php
             - nginx
+    rabbit:
+       image: "rabbitmq:3.7-management"
+       hostname: "localhost"
+       environment:
+            - RABBITMQ_ERLANG_COOKIE=12345678
+            - RABBITMQ_DEFAULT_USER=guest
+            - RABBITMQ_DEFAULT_PASS=guest
+            - RABBITMQ_DEFAULT_VHOST=/
+       ports:
+            - "15672:15672"
+            - "5672:5672"
