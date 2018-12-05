@@ -1,14 +1,14 @@
 FROM php:7.2-fpm
-MAINTAINER Samuel NELA <hello@samnela.com>
+LABEL maintainer="hello@samnela.com"
 RUN apt-get update && apt-get install -y librabbitmq-dev libssh-dev \
-    git  unzip vim \
+    git  unzip vim  python-setuptools supervisor \
     && pecl install amqp
 
-# Install Composer
+RUN easy_install supervisor
+
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN composer --version
 
-# Set timezone
 RUN rm /etc/localtime
 RUN ln -s /usr/share/zoneinfo/Europe/Paris /etc/localtime
 RUN "date"
