@@ -17,3 +17,5 @@
 [php-twig](https://atom.io/packages/php-twig)
 
 [tester-phpunit](https://atom.io/packages/tester-phpunit)
+
+[php-debug](https://atom.io/packages/php-debug)
