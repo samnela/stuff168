@@ -1,9 +1,7 @@
 FROM debian:stretch-slim
 
-MAINTAINER Samuel NELA <hello@samnela.com>
+LABEL maintainer="hello@samnela.com"
 
-#RUN apk add --update nginx
-#RUN rm -rf /var/cache/apk/* && rm -rf /tmp/*
 RUN apt-get update && apt-get install -y \
     nginx
 ADD nginx.conf /etc/nginx/
@@ -16,7 +14,6 @@ RUN rm /etc/nginx/sites-available/default
 
 RUN echo "upstream php-upstream { server php:9000; }" > /etc/nginx/conf.d/upstream.conf
 
-#RUN adduser -D -g '' -G www-data www-data
 
 RUN usermod -u 1000 www-data
 
