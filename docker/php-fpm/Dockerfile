@@ -1,13 +1,13 @@
-FROM php:7.2-fpm
+FROM php:7.4-fpm
 LABEL maintainer="hello@samnela.com"
-RUN apt-get update && apt-get install -y librabbitmq-dev libssh-dev \
-    git  unzip vim  python-setuptools supervisor \
-    && pecl install amqp
+RUN apt-get update && apt-get install -y librabbitmq-dev libssh-dev libicu-dev \
+    git unzip vim  python-setuptools supervisor  \
+    libonig-dev libcurl4-openssl-dev uuid-dev \
+    && pecl install amqp uuid
 
 RUN easy_install supervisor
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-RUN composer --version
 
 RUN rm /etc/localtime
 RUN ln -s /usr/share/zoneinfo/Europe/Paris /etc/localtime
