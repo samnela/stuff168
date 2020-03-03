@@ -21,6 +21,8 @@
 
 [PHP DockBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
 
+[PHP Mess Detector](https://marketplace.visualstudio.com/items?itemName=ecodes.vscode-phpmd)
+
 <h2>JavaScript</h2>
 
 [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
@@ -29,8 +31,18 @@
 
 [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
 
+[Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets)
+
 <h2>Git</h2>
 
 [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
 
 [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+
+<h2>Other</h2>
+
+[Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+
+[Lorem Whatever](https://marketplace.visualstudio.com/items?itemName=jobe451.lorem-whatever)
+
+[Rainbow Brackets](https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets)
