@@ -4,6 +4,7 @@
 
 [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 
+[Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 
 <h2>PHP</h2>
 
@@ -46,3 +47,9 @@
 [Lorem Whatever](https://marketplace.visualstudio.com/items?itemName=jobe451.lorem-whatever)
 
 [Rainbow Brackets](https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets)
+
+[DotEnv](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
+
+[Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock)
+
+[Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
