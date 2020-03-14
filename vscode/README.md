@@ -24,6 +24,10 @@
 
 [PHP Mess Detector](https://marketplace.visualstudio.com/items?itemName=ecodes.vscode-phpmd)
 
+[PHP Snippets from PHPStorm](https://marketplace.visualstudio.com/items?itemName=phiter.phpstorm-snippets)
+
+[PHP Files](https://marketplace.visualstudio.com/items?itemName=sevavietl.php-files)
+
 <h2>JavaScript</h2>
 
 [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
